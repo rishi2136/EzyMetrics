@@ -1,4 +1,4 @@
-
+![pdf-generator](https://github.com/user-attachments/assets/7a1bb7f9-ea4c-4423-af48-8b289f74e39d)
 # EzyMetrics
 
 A website on which you rae able to create campaign, retrive the campaigns and the lead generated from them, through this plaform you are also able to get the campaigns sales report in pdf format by download or direct print it.And also have the feature of email notification to your gmail whenever new campaign created.
@@ -21,6 +21,8 @@ Create the project with standard structure and the name conversion for the funct
 ## Folder Structure Screenshot
 ![folder_structure](https://github.com/user-attachments/assets/3110e646-0b6b-4e86-b59a-23e062c5789d)
 
+## PDF Generator
+![pdf-generator](https://github.com/user-attachments/assets/f6437e71-5cef-4e75-a9c1-92f2c306ac83)
 
 ### BackEnd endpoints
 
