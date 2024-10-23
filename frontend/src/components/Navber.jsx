@@ -4,7 +4,7 @@ const Navber = (props) => {
   let {email, setEmail} = props;
 const handleClick = ()=>{
   if(email === null)
-  alert("You need to add email to download report");
+  alert("You need to add email first, click on add email");
 }
 
 const handleAddEmail = ()=>{

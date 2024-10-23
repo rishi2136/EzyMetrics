@@ -18,47 +18,54 @@ const AddCampaign = () => {
   const emailObject = {
     from_name: "Rishi",
     to_name: email,
-    message: `hello their your are creating your own campaign through our website`
-  }
+    message:
+      "hello their your are creating your own campaign through our website",
+  };
 
+  (function () {
+    // https://dashboard.emailjs.com/admin/account
+    emailJS.init({
+      publicKey: VITE_PUBLIC_KEY,
+    });
+  })();
 
-
-  const autoEmail = ()=>{
-const init = function() {
-  // https://dashboard.emailjs.com/admin/account
-  emailjs.init({
-    publicKey: VITE_PUBLIC_KEY,
-  });
-}
-init();
-
-
-    if(email !== null ){
-          // sendForm template as sendForm('service_id', 'template_id', emailObject, "public key")
-        emailJS.sendForm(VITE_SERVICE_ID,VITE_TEMPLATE_ID,emailObject, VITE_PUBLIC_KEY)
-        .then(() => {
-          console.log('SUCCESS!');
-      }, (error) => {
-          console.log('FAILED...', error);
-      })
+  const autoEmail = () => {
+    if (email !== null) {
+      // sendForm template as sendForm('service_id', 'template_id', emailObject, "public key")
+      emailJS
+        .sendForm(
+          VITE_SERVICE_ID,
+          VITE_TEMPLATE_ID,
+          emailObject,
+          VITE_PUBLIC_KEY
+        )
+        .then(
+          () => {
+            console.log("SUCCESS!");
+            alert("Email sended to you");
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
       // console.log("I am exceuted");
     }
-  }
+  };
 
-  const onSubmit = async (data) =>{ 
-    console.log(data)
-    // const res = await fetch("http://localhost:3012/camp/add",{
-    //   method: "post",
-    //   headers: {
-    //     "content-type": "application/json",
-    //   },
-    //   body:JSON.stringify( data)
-    // });
-    // const parsedData = await res.json();
-    // console.log(parsedData);
+  const onSubmit = async (data) => {
+    console.log(data);
+    const res = await fetch("http://localhost:3012/camp/add", {
+      method: "post",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+    const parsedData = await res.json();
+    console.log(parsedData);
     autoEmail();
-  // navigate("/");
-  }
+    navigate("/");
+  };
 
   console.log(email);
   return (
