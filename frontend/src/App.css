@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+iframe {
+  height: 100%;
+  width: 100vw;
+  
+}
+
+/* campaign.jsx */
+.camp-stats {
+  display: flex;
+  list-style-type: none;
+}
+.HR {
+  width: 1px;
+  background-color: black;
+}
+
