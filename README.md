@@ -18,15 +18,8 @@ Utitlise MERN stack for the implementation of the whole project with style with 
 Create the project with standard structure and the name conversion for the function and files are self explainary.
 
 
-
-
-
-
-
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+## Folder Structure Screenshot
+![folder_structure](https://github.com/user-attachments/assets/3110e646-0b6b-4e86-b59a-23e062c5789d)
 
 
 ### BackEnd endpoints
@@ -70,4 +63,4 @@ Create the project with standard structure and the name conversion for the funct
 
 
 ## Appreciation
-I appreciate that you read the document to the end, Thanks for reading the document contact me on my [Email](rishiagrahari36@gmail.com)
+I appreciate that you read the document to the end, Thanks for reading the document contact me on my [@rishiagrahari36@gmail.com](@rishiagrahari36@gmail.com)
